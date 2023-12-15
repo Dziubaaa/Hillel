@@ -23,11 +23,12 @@ function firstTask () {
 //----------------------------------------------------------------------------//
 
 function secondTask () {
+  
     let inputValue = prompt("Введіть число на перевірку: ");
 
     inputValue = parseInt(inputValue);
 
-    if (isNaN(inputValue) || inputValue <= 0 || !Number.isInteger(inputNumber)) {
+    if (isNaN(inputValue)) {
         alert("Будь ласка, введіть число.");
         return;
     }
@@ -60,7 +61,7 @@ function thirdTask () {
 
     inputNumber = parseInt(inputNumber);
     
-    if(isNaN(inputNumber) || inputNumber <= 0 || !Number.isInteger(inputNumber)) {
+    if(isNaN(inputNumber)) {
         alert("Введіть будь ласка ціле число.");
         return;
     } else {
